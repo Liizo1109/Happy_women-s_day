@@ -37,7 +37,12 @@ body {
   position: fixed;
   top: 80px;
 }
-
+.message-to-mom {
+  color: white;
+  font-size: 24px; /* Điều chỉnh kích thước font theo ý bạn */
+  margin-top: 20px;
+  text-align: center;
+}
 .flowers {
   position: relative;
   transform: scale(0.9);
