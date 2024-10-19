@@ -41,6 +41,10 @@ body {
 .message-to-mom {
   color: white;
   font-size: 24px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
   text-align: center;
   margin-top: 20px;
   position: relative; /* Điều chỉnh để dòng chữ không đè lên hoa */
