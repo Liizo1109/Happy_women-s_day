@@ -39,10 +39,13 @@ body {
 }
 .message-to-mom {
   color: white;
-  font-size: 24px; /* Điều chỉnh kích thước font theo ý bạn */
-  margin-top: 20px;
+  font-size: 24px;
   text-align: center;
+  margin-top: 20px;
+  position: relative; /* Điều chỉnh để dòng chữ không đè lên hoa */
+  z-index: 5; /* Đảm bảo dòng chữ nằm phía trước hoặc sau hoa tùy ý */
 }
+
 .flowers {
   position: relative;
   transform: scale(0.9);
