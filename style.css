@@ -1025,3 +1025,23 @@ body {
     height: 40vmin; /* Điều chỉnh chiều cao của cành hoa */
   }
 }
+<script>
+  const flowers = ['🌸', '🏵️', '🌺', '🌻', '🌼', '🌷', '🌹', '🪻'];
+
+  function createFlower() {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+    flower.innerText = flowers[Math.floor(Math.random() * flowers.length)];
+    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.animationDuration = Math.random() * 3 + 2 + 's'; // Thời gian hoa rơi ngẫu nhiên
+    flower.style.fontSize = Math.random() * 10 + 15 + 'px'; // Kích thước ngẫu nhiên của hoa
+
+    document.querySelector('.flower-falling-container').appendChild(flower);
+
+    setTimeout(() => {
+      flower.remove();
+    }, 5000); // Xóa hoa sau khi rơi
+  }
+
+  setInterval(createFlower, 300); // Tạo hoa mới sau mỗi 300ms
+</script>
