@@ -1041,16 +1041,18 @@ body {
   top: -50px;
   font-size: 24px;
   animation: fall linear infinite;
+  right: -50px; /* Đặt hoa xuất hiện bên phải */
 }
 
 @keyframes fall {
   0% {
-    transform: translate(0, -100px);
+    transform: translate(0, 0); /* Vị trí ban đầu */
     opacity: 1;
   }
   100% {
-    transform: translate(-100vw, 100vh); /* Hoa rơi từ trên xuống và di chuyển từ phải qua trái */
+    transform: translate(-100vw, 100vh); /* Rơi từ phải qua trái và xuống dưới */
     opacity: 0;
   }
 }
+
 
