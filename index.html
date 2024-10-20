@@ -31,7 +31,10 @@
       const flower = document.createElement('div');
       flower.classList.add('flower');
       flower.innerText = flowers[Math.floor(Math.random() * flowers.length)];
-      flower.style.left = Math.random() * 100 + 'vw';
+  
+      // Đặt hoa ở bên phải, cách ngẫu nhiên theo chiều dọc (trục Y)
+      flower.style.right = '-50px';
+      flower.style.top = Math.random() * 100 + 'vh'; // Đặt hoa ngẫu nhiên trên chiều dọc
       flower.style.animationDuration = Math.random() * 3 + 2 + 's'; // Thời gian hoa rơi ngẫu nhiên
       flower.style.fontSize = Math.random() * 10 + 15 + 'px'; // Kích thước ngẫu nhiên của hoa
 
@@ -42,7 +45,7 @@
       }, 5000); // Xóa hoa sau khi rơi
     }
 
-    setInterval(createFlower, 300); // Tạo hoa mới sau mỗi 300ms
+    setInterval(createFlower, 250); // Tạo hoa mới sau mỗi 300ms
   </script>
     <div class="flowers">
       <div class="flower flower--1">
